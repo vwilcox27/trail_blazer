@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  get 'trails/index'
+
+  get 'trails/about'
+
+  get 'trails/help'
+
   devise_for :users
-  get 'static_pages/home'
-
-  get 'static_pages/help'
-
-  root 'application#hello'
+  root 'trails#index'
 end
