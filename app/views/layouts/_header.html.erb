@@ -1,14 +1,14 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "TrailBlazer", '#', id: "logo" %>
+    <%= link_to "TrailBlazer", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", '#' %></li>
-        <li><%= link_to "About", '#' %></li>
-        <li><%= link_to "Help", '#' %></li>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Help", help_path %></li>
         <li><%= link_to "Sign Up", new_user_registration_path, method: :get %></li>
-        <li><%= link_to "Login", new_user_session_path, method: :get  %></li>
-        <li><%=link_to "Logout", destroy_user_session_path, method: :delete %></li>-->-->
+        <li><%= link_to "Login", new_user_session_path, method: :get %></li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
       </ul>
     </nav>
   </div>

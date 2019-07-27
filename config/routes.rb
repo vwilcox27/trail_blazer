@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  get 'trails/index'
-
-  get 'trails/about'
-
-  get 'trails/help'
+  root 'trails#index'
+  get '/about',   to: 'trails#about'
+  get '/help',    to: 'trails#help'
+  get '/contact', to: 'trails#contact'
 
   devise_for :users
-  root 'trails#index'
+
 end
