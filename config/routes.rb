@@ -4,6 +4,4 @@ Rails.application.routes.draw do
   get '/help',    to: 'trails#help'
   get '/contact', to: 'trails#contact'
 
-  devise_for :users
-
 end
