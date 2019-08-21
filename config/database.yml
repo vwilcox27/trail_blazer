@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: trail_blazer_production
+  username: trail_blazer
+  password: <%= ENV['TRAIL_BLAZER_DATABASE_PASSWORD'] %>
