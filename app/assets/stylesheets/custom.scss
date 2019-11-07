@@ -1,17 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// mixins, variables etc.
+/* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
 
 @mixin box_sizing {
-  -moz-box-sizing:      border-box;
-  -webkit-box-sizing:   border-box;
-  box-sizing:           border-box;
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
 }
 
-// universal
+/* universal */
 
 body {
   padding-top: 60px;
@@ -31,6 +31,8 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
+/* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -57,7 +59,8 @@ p {
   line-height: 1.7em;
 }
 
-// header
+
+/* header */
 
 #logo {
   float: left;
@@ -74,12 +77,7 @@ p {
   }
 }
 
-//#logo:hover {
-//  color: #fff;
-//  text-decoration: none;
-//}
-
-// footer
+/* footer */
 
 footer {
   margin-top: 45px;
@@ -105,7 +103,7 @@ footer {
   }
 }
 
-// miscellaneous
+/* miscellaneous */
 
 .debug_dump {
   clear: both;
@@ -115,7 +113,8 @@ footer {
   @include box_sizing;
 }
 
-// sidebar
+/* sidebar */
+
 aside {
   section.user_info {
     margin-top: 20px;
@@ -151,7 +150,8 @@ aside {
   margin-top: 15px;
 }
 
-// forms
+/* forms */
+
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
